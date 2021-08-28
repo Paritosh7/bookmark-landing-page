@@ -1,0 +1,115 @@
+:root {
+  --color-soft-blue: hsl(231, 69%, 60%);
+  --color-soft-red: hsl(0, 94%, 66%);
+  --color-greyish-blue: hsl(229, 8%, 60%);
+  --color-very-dark-blue: hsl(229, 31%, 21%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+h1 {
+  color: var(--color-very-dark-blue);
+  font-weight: 500;
+  line-height: 2rem;
+}
+p {
+  color: var(--color-greyish-blue);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+header {
+  margin: 2rem 0 5rem;
+}
+
+#header__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+}
+.menu-btn::before {
+  content: url("../images/icon-hamburger.svg");
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  left: 21vw;
+  top: 12.7rem;
+  width: 84vw;
+  height: 55vw;
+  z-index: -1;
+  border-radius: 25% 0 0 35%;
+  background-color: var(--color-soft-blue);
+}
+
+.hero__image-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
+#bookmark {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0 0 0;
+  align-items: center;
+}
+
+#bookmark__btns-wrapper {
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+#bookmark__btns-wrapper > * + * {
+  margin-left: 1rem;
+}
+
+#bookmark p {
+  margin: 0 1.8rem 0 1.8rem;
+}
+
+.btn {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  width: 8.5rem;
+  font-size: 0.8rem;
+  color: var(--color-greyish-blue);
+  box-shadow: 0px 0px 0px 0px var(--color-greyish-blue);
+}
+
+.btn-cool {
+  background-color: var(--color-soft-blue);
+  color: white;
+  font-weight: 500;
+}
+
+#features {
+  margin-top: 9rem;
+}
+
+#features p {
+  margin: 0 1.6rem 0 1.6rem;
+}
