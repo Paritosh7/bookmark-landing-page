@@ -17,7 +17,8 @@ html {
 }
 
 h1,
-p {
+p,
+li {
   text-align: center;
 }
 h1 {
@@ -112,4 +113,23 @@ header {
 
 #features p {
   margin: 0 1.6rem 0 1.6rem;
+}
+.features__tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.tab:first-child {
+  border-top: 1px solid rgba(74, 94, 207, 0.2);
+}
+
+.tab {
+  list-style: none;
+  padding: 1rem;
+  color: var(--color-greyish-blue);
+  border-bottom: 1px solid rgba(74, 94, 207, 0.2);
 }
